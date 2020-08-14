@@ -1,4 +1,5 @@
 FROM java:8
+FROM maven:latest
 MAINTAINER Gladys
 ADD pom.xml /tmp/build/
 ADD src /tmp/build/src
