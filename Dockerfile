@@ -2,7 +2,7 @@ FROM java:8
 MAINTAINER Gladys
 ADD pom.xml /tmp/build/
 ADD src /tmp/build/src
-RUN cd /tmp/bild/ && mvn clean package \
+RUN cd /tmp/build/ && mvn clean package \
         && mv target/*.jar /app.jar \
         && cd / && rm -rf /tmp/build
 VOLUME /tmp
