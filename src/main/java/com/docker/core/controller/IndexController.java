@@ -17,4 +17,9 @@ public class IndexController {
         return "Hello DaoCould";
     }
 
+    @RequestMapping("/index2")
+    public String index2(){
+        return "这是测试自动构建的版本";
+    }
+
 }
